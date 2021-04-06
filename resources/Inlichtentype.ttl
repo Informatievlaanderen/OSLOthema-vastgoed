@@ -1,0 +1,505 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType> a skos:ConceptScheme;
+  skos:definition "InlichtingenType Taxonomie"@nl;
+  skos:hasTopConcept <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/BeschermingOnroerendErfgoed>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/HuisvestingGrondEnPandenbeleidEnEconomie>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/MilieuEnNatuur>, 
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Plannen>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/RuimtelijkeOrdening>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Vergunningen>;
+  skos:prefLabel "InlichtingenType"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Gewestplan> a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Plannen/Plan>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "Gewestplan"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/AlgemeenPlanVanAanleg>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Plannen/Plan>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "AlgemeenPlanVanAanleg"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/BijzonderPlanVanAanleg>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Plannen/Plan>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "BijzonderPlanVanAanleg"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/GemeentelijkRuimtelijkUitvoeringsplan>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Plannen/Plan>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "GemeentelijkRuimtelijkUitvoeringsplan"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/ProvinciaalRuimtelijkUitvoeringsplan>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Plannen/Plan>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "ProvinciaalRuimtelijkUitvoeringsplan"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/GewestelijkRuimtelijkUitvoeringsplan>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Plannen/Plan>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "GewestelijkRuimtelijkUitvoeringsplan"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Rooilijnplan> a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Plannen/Plan>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "Rooilijnplan"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Onteigeningsplan> a
+    skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Plannen/Plan>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "Onteigeningsplan"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/RuilOfHerverkavelingsplan>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Plannen/Plan>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "RuilOfHerverkavelingsplan"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/GemeentelijkeStedenbouwkundigeVerordening>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Plannen/Verordening>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "GemeentelijkeStedenbouwkundigeVerordening"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/GemeentelijkeBouwverordening>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Plannen/Verordening>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "GemeentelijkeBouwverordening"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/GemeentelijkeVerkavelingsverordening>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Plannen/Verordening>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "GemeentelijkeVerkavelingsverordening"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/ProvincialeStedenbouwkundigeVerordening>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Plannen/Verordening>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "ProvincialeStedenbouwkundigeVerordening"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/GewestelijkestedenbouwkundigeVerordening>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Plannen/Verordening>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "GewestelijkestedenbouwkundigeVerordening"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/VoorkeursOfProjectbesluit>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Plannen/Besluit>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "VoorkeursOfProjectbesluit"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/NietVervallenVerkaveling>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Vergunningen/Plan>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "NietVervallenVerkaveling"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/NietVervallendeelVanEenVerkaveling>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Vergunningen/Plan>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "NietVervallendeelVanEenVerkaveling"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Bouwvergunning> a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Vergunningen/Vergunning>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "Bouwvergunning"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Verkavelingsvergunning>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Vergunningen/Vergunning>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "Verkavelingsvergunning"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/StedenbouwkundigeVergunning>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Vergunningen/Vergunning>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "StedenbouwkundigeVergunning"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Omgevingsvergunning>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Vergunningen/Vergunning>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "Omgevingsvergunning"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/StedenbouwkundigMisdrijf>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Vergunningen/Overtreding>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "StedenbouwkundigMisdrijf"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/VerdeeldZonderVergunning>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/RuimtelijkeOrdening/Overtreding>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "VerdeeldZonderVergunning"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/OmgevingsvergunningVoorIngedeeldeInrichtingOfActiviteit>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/RuimtelijkeOrdening/Vergunning>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "OmgevingsvergunningVoorIngedeeldeInrichtingOfActiviteit"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/AkteVanMeldingKlasse3>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/MilieuEnNatuur/Melding>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "AkteVanMeldingKlasse3"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/OvertredingopMilieuvergunningsreglementering>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/MilieuEnNatuur/Overtreding>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "OvertredingopMilieuvergunningsreglementering"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/VestigingVoor2015VanInrichtingMetRisicoOpBodemverontreiniging>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/MilieuEnNatuur/Risico>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "VestigingVoor2015VanInrichtingMetRisicoOpBodemverontreiniging"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/VestigingNa2015VanInrichtingMetRisicoOpBodemverontreiniging>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/MilieuEnNatuur/Risico>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "VestigingNa2015VanInrichtingMetRisicoOpBodemverontreiniging"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/BeschermingszoneGrondwaterwinning>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/MilieuEnNatuur/Plan>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "BeschermingszoneGrondwaterwinning"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Bosbeheersplan> a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/MilieuEnNatuur/Plan>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "Bosbeheersplan"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/VogelOfHabitatrichtlijngebied>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/MilieuEnNatuur/Plan>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "VogelOfHabitatrichtlijngebied"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Natuurbeheerplan> a
+    skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/MilieuEnNatuur/Plan>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "Natuurbeheerplan"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/BeschermdDuingebiedOfVoorDuingebiedBelangrijkLandbouwgebied>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/MilieuEnNatuur/Plan>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "BeschermdDuingebiedOfVoorDuingebiedBelangrijkLandbouwgebied"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/ZoneringsEnSaneringsEnUitvoeringsplannenLozingHuishoudelijkAfvalwater>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/MilieuEnNatuur/Plan>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "ZoneringsEnSaneringsEnUitvoeringsplannenLozingHuishoudelijkAfvalwater"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/OverstromingsgevoeligGebiedOfRisicozoineVoorOverstromingen>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/MilieuEnNatuur/Plan>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "OverstromingsgevoeligGebiedOfRisicozoineVoorOverstromingen"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/OmgevingsvergunningVoorVegetatiewijziging>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/MilieuEnNatuur/Vergunning>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "OmgevingsvergunningVoorVegetatiewijziging"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/IndustrieterreinaangelegdDoorGemeenteInHetKaderVanDewetgevingOpDeEconomischeExpansie>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/HuisvestingGrondEnPandenbeleidEnEconomie/Plan>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "IndustrieterreinaangelegdDoorGemeenteInHetKaderVanDewetgevingOpDeEconomischeExpansie"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/IndustrieterreinAangelegdDoorDeGemeenteMetSteunVanHetVlaamsGewest.>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/HuisvestingGrondEnPandenbeleidEnEconomie/Plan>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "IndustrieterreinAangelegdDoorDeGemeenteMetSteunVanHetVlaamsGewest."@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/GewestelijkeInventarisVanLeegstaandeEnOfVerwaarloosdeBedrijfsruimten>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/HuisvestingGrondEnPandenbeleidEnEconomie/Inventaris>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "GewestelijkeInventarisVanLeegstaandeEnOfVerwaarloosdeBedrijfsruimten"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/GewestelijkeInventarisVanOngeschikteEnOnbewoonbareWoningenEnGebouwen>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/HuisvestingGrondEnPandenbeleidEnEconomie/Inventaris>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "GewestelijkeInventarisVanOngeschikteEnOnbewoonbareWoningenEnGebouwen"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/GemeentelijkRegisterVanOnbebouwdePercelen>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/HuisvestingGrondEnPandenbeleidEnEconomie/Inventaris>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "GemeentelijkRegisterVanOnbebouwdePercelen"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/GemeentelijkRegisterVanVerwaarloosdeWoningenEnGebouwen>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/HuisvestingGrondEnPandenbeleidEnEconomie/Inventaris>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "GemeentelijkRegisterVanVerwaarloosdeWoningenEnGebouwen"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/GemeentelijkRegisterVanLeegstaandeWoningenEnGebouwen>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/HuisvestingGrondEnPandenbeleidEnEconomie/Inventaris>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "GemeentelijkRegisterVanLeegstaandeWoningenEnGebouwen"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/OmgevingsvergunningVoorheenSocopEconomischeVergunningVoorKleinhandelsvestiging>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/HuisvestingGrondEnPandenbeleidEnEconomie/Vergunning>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "OmgevingsvergunningVoorheenSocopEconomischeVergunningVoorKleinhandelsvestiging"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/ConformiteitsattestVoorWoning>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/HuisvestingGrondEnPandenbeleidEnEconomie/Attest>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "ConformiteitsattestVoorWoning"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/OpgenomenInVastgesteldeInventarisOfBeschermdErfgoed>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/BeschermingOnroerendErfgoed/Inventaris>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:prefLabel "OpgenomenInVastgesteldeInventarisOfBeschermdErfgoed"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/ErfdienstbaarheidVanOpenbaarNut>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/ErfdienstbaarheidVanOpenbaarNut>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:narrower <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/ErfdienstbaarheidVanOpenbaarNut>;
+  skos:prefLabel "ErfdienstbaarheidVanOpenbaarNut"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Plannen> a skos:Concept;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:narrower <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Plannen/Besluit>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Plannen/Plan>, <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Plannen/Verordening>;
+  skos:prefLabel "Plannen"@nl;
+  skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType> .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Vergunningen> a skos:Concept;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:narrower <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Vergunningen/Overtreding>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Vergunningen/Plan>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Vergunningen/Vergunning>;
+  skos:prefLabel "Vergunningen"@nl;
+  skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType> .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/RuimtelijkeOrdening>
+  a skos:Concept;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:narrower <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/RuimtelijkeOrdening/Overtreding>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/RuimtelijkeOrdening/Vergunning>;
+  skos:prefLabel "RuimtelijkeOrdening"@nl;
+  skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType> .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/MilieuEnNatuur> a skos:Concept;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:narrower <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/MilieuEnNatuur/Melding>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/MilieuEnNatuur/Overtreding>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/MilieuEnNatuur/Plan>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/MilieuEnNatuur/Risico>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/MilieuEnNatuur/Vergunning>;
+  skos:prefLabel "MilieuEnNatuur"@nl;
+  skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType> .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/HuisvestingGrondEnPandenbeleidEnEconomie>
+  a skos:Concept;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:narrower <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/HuisvestingGrondEnPandenbeleidEnEconomie/Attest>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/HuisvestingGrondEnPandenbeleidEnEconomie/Inventaris>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/HuisvestingGrondEnPandenbeleidEnEconomie/Plan>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/HuisvestingGrondEnPandenbeleidEnEconomie/Vergunning>;
+  skos:prefLabel "HuisvestingGrondEnPandenbeleidEnEconomie"@nl;
+  skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType> .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/BeschermingOnroerendErfgoed>
+  a skos:Concept;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:narrower <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/BeschermingOnroerendErfgoed/Inventaris>;
+  skos:prefLabel "BeschermingOnroerendErfgoed"@nl;
+  skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType> .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Plannen/Plan> a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Plannen>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:narrower <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/AlgemeenPlanVanAanleg>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/BijzonderPlanVanAanleg>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/GemeentelijkRuimtelijkUitvoeringsplan>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/GewestelijkRuimtelijkUitvoeringsplan>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Gewestplan>, <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Onteigeningsplan>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/ProvinciaalRuimtelijkUitvoeringsplan>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Rooilijnplan>, <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/RuilOfHerverkavelingsplan>;
+  skos:prefLabel "Plan"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Plannen/Verordening>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Plannen>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:narrower <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/GemeentelijkeBouwverordening>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/GemeentelijkeStedenbouwkundigeVerordening>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/GemeentelijkeVerkavelingsverordening>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/GewestelijkestedenbouwkundigeVerordening>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/ProvincialeStedenbouwkundigeVerordening>;
+  skos:prefLabel "Verordening"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Plannen/Besluit> a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Plannen>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:narrower <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/VoorkeursOfProjectbesluit>;
+  skos:prefLabel "Besluit"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Vergunningen/Plan> a
+    skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Vergunningen>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:narrower <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/NietVervallenVerkaveling>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/NietVervallendeelVanEenVerkaveling>;
+  skos:prefLabel "Plan"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Vergunningen/Vergunning>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Vergunningen>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:narrower <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Bouwvergunning>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Omgevingsvergunning>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/StedenbouwkundigeVergunning>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Verkavelingsvergunning>;
+  skos:prefLabel "Vergunning"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Vergunningen/Overtreding>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Vergunningen>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:narrower <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/StedenbouwkundigMisdrijf>;
+  skos:prefLabel "Overtreding"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/RuimtelijkeOrdening/Overtreding>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/RuimtelijkeOrdening>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:narrower <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/VerdeeldZonderVergunning>;
+  skos:prefLabel "Overtreding"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/RuimtelijkeOrdening/Vergunning>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/RuimtelijkeOrdening>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:narrower <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/OmgevingsvergunningVoorIngedeeldeInrichtingOfActiviteit>;
+  skos:prefLabel "Vergunning"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/MilieuEnNatuur/Melding>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/MilieuEnNatuur>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:narrower <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/AkteVanMeldingKlasse3>;
+  skos:prefLabel "Melding"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/MilieuEnNatuur/Overtreding>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/MilieuEnNatuur>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:narrower <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/OvertredingopMilieuvergunningsreglementering>;
+  skos:prefLabel "Overtreding"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/MilieuEnNatuur/Risico>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/MilieuEnNatuur>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:narrower <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/VestigingNa2015VanInrichtingMetRisicoOpBodemverontreiniging>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/VestigingVoor2015VanInrichtingMetRisicoOpBodemverontreiniging>;
+  skos:prefLabel "Risico"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/MilieuEnNatuur/Plan>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/MilieuEnNatuur>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:narrower <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/BeschermdDuingebiedOfVoorDuingebiedBelangrijkLandbouwgebied>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/BeschermingszoneGrondwaterwinning>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Bosbeheersplan>, <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/Natuurbeheerplan>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/OverstromingsgevoeligGebiedOfRisicozoineVoorOverstromingen>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/VogelOfHabitatrichtlijngebied>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/ZoneringsEnSaneringsEnUitvoeringsplannenLozingHuishoudelijkAfvalwater>;
+  skos:prefLabel "Plan"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/MilieuEnNatuur/Vergunning>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/MilieuEnNatuur>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:narrower <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/OmgevingsvergunningVoorVegetatiewijziging>;
+  skos:prefLabel "Vergunning"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/HuisvestingGrondEnPandenbeleidEnEconomie/Plan>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/HuisvestingGrondEnPandenbeleidEnEconomie>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:narrower <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/IndustrieterreinAangelegdDoorDeGemeenteMetSteunVanHetVlaamsGewest.>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/IndustrieterreinaangelegdDoorGemeenteInHetKaderVanDewetgevingOpDeEconomischeExpansie>;
+  skos:prefLabel "Plan"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/HuisvestingGrondEnPandenbeleidEnEconomie/Inventaris>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/HuisvestingGrondEnPandenbeleidEnEconomie>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:narrower <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/GemeentelijkRegisterVanLeegstaandeWoningenEnGebouwen>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/GemeentelijkRegisterVanOnbebouwdePercelen>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/GemeentelijkRegisterVanVerwaarloosdeWoningenEnGebouwen>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/GewestelijkeInventarisVanLeegstaandeEnOfVerwaarloosdeBedrijfsruimten>,
+    <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/GewestelijkeInventarisVanOngeschikteEnOnbewoonbareWoningenEnGebouwen>;
+  skos:prefLabel "Inventaris"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/HuisvestingGrondEnPandenbeleidEnEconomie/Vergunning>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/HuisvestingGrondEnPandenbeleidEnEconomie>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:narrower <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/OmgevingsvergunningVoorheenSocopEconomischeVergunningVoorKleinhandelsvestiging>;
+  skos:prefLabel "Vergunning"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/HuisvestingGrondEnPandenbeleidEnEconomie/Attest>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/HuisvestingGrondEnPandenbeleidEnEconomie>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:narrower <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/ConformiteitsattestVoorWoning>;
+  skos:prefLabel "Attest"@nl .
+
+<https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/BeschermingOnroerendErfgoed/Inventaris>
+  a skos:Concept;
+  skos:broader <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/BeschermingOnroerendErfgoed>;
+  skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType>;
+  skos:narrower <https://data.vlaanderen.be/id/conceptscheme/InlichtingenType/OpgenomenInVastgesteldeInventarisOfBeschermdErfgoed>;
+  skos:prefLabel "Inventaris"@nl .
