@@ -1,13 +1,13 @@
 {
   "naam": "Vocabularium en applicatieprofielen vastgoed",
   "rapport": "",
-  "verantwoordelijke_organisatie": "Agentschap Informatie Vlaanderen",
+  "verantwoordelijke_organisatie": "Agentschap Digitaal Vlaanderen",
   "identificator_organisatie": "http://data.vlaanderen.be/id/organisatie/OVO002949",
   "publicatiedatum": "TBD",
   "type_toepassing": "TBD",
   "categorie": "Vocabularium en applicatieprofielen",
-  "beschrijving" : "vastgoed.md",
-  "specificatiedocument": [  ],
+  "beschrijving": "vastgoed.md",
+  "specificatiedocument": [],
   "documentatie": [],
   "charter": [
   ],
