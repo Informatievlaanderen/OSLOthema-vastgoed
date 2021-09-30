@@ -12,8 +12,8 @@
   "contributors-file": "stakeholders.csv",
   "contributors-column": "MijnKolom",
   "site": "site-skeleton/OSLO-Vastgoed-AP",
-  "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-vastgoed/issues",
-  "standaardregisterurl": "https://data.vlaanderen.be/standaarden/standaard-in-ontwikkeling/vocabularium-en-applicatieprofielen-vastgoed.html"
+  "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-mijnThema/issues",
+  "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html"
 },
 {
   "name": "ap-vastgoed",
