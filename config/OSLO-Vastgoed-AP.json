@@ -5,7 +5,7 @@
     "eap": "OSLO-Vastgoed-AP.eap",
     "diagram": "OSLO-vastgoed",
     "template": "mijn-applicatieprofiel-ap.j2",
-    "title": "OSLO Vastgoed - Vocabularium en applicatieprofiel",
+    "title": "OSLO Vastgoed - Applicatieprofiel",
     "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "publication-date": "2021-06-30",
     "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
@@ -13,6 +13,6 @@
     "contributors-column": "MijnKolom",
     "site": "site-skeleton/OSLO-Vastgoed-AP",
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-vastgoed/issues",
-    "standaardregisterurl": "https://data.vlaanderen.be/standaarden/standaard-in-ontwikkeling/vocabularium-en-applicatieprofielen-vastgoed.html"
+    "standaardregisterurl": "https://data.vlaanderen.be/standaarden/standaard-in-ontwikkeling/applicatieprofiel-vastgoed.html"
   }
 ]
