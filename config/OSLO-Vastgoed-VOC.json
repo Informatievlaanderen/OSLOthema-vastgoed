@@ -1,6 +1,6 @@
 [
     {
-      "name": "OSLO-Vastgoed",
+      "name": "vastgoed",
       "type": "voc",
       "eap": "OSLO-Vastgoed-AP.eap",
       "diagram": "OSLO-vastgoed",
